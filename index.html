@@ -19,7 +19,6 @@
             --text-muted: #6b6660;
             --border: rgba(0,0,0,0.08);
         }
-
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body {
@@ -29,7 +28,6 @@
             overflow-x: hidden;
             cursor: none;
         }
-
         /* Custom Cursor */
         .cursor {
             width: 10px; height: 10px;
@@ -48,7 +46,6 @@
             transform: translate(-50%, -50%);
             opacity: 0.6;
         }
-
         /* NAV */
         nav {
             position: fixed; top: 0; left: 0; right: 0;
@@ -92,7 +89,6 @@
         }
         nav.scrolled .nav-cta { background: var(--text); color: var(--white); }
         .nav-cta:hover { background: var(--accent-dark); transform: translateY(-1px); }
-
         /* HERO */
         .hero {
             min-height: 100vh;
@@ -169,7 +165,6 @@
             background: linear-gradient(to bottom, var(--stone), transparent);
             animation: scrollPulse 2s infinite;
         }
-
         /* STATS BAR */
         .stats-bar {
             background: var(--cream); border-bottom: 1px solid var(--border);
@@ -195,7 +190,6 @@
             text-transform: uppercase; color: var(--stone);
             margin-top: 10px; display: block;
         }
-
         /* SECTIONS */
         section { padding: 120px 60px; }
         .section-label {
@@ -214,7 +208,6 @@
             font-size: 1rem; font-weight: 300;
             color: var(--text-muted); line-height: 1.9; max-width: 480px;
         }
-
         /* ABOUT */
         .about-section {
             background: var(--white);
@@ -230,8 +223,9 @@
         }
         .about-card-main p {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem; font-weight: 300; font-style: italic;
-            color: var(--stone-light); line-height: 1.5;
+            font-size: 1.1rem; font-weight: 300; font-style: italic;
+            color: var(--stone-light); line-height: 1.4;
+            max-width: 300px;
         }
         .about-card-accent {
             bottom: 0; right: 0; width: 220px; height: 220px;
@@ -247,7 +241,6 @@
             font-size: 0.72rem; letter-spacing: 0.15em;
             text-transform: uppercase; color: rgba(0,0,0,0.6); margin-top: 8px;
         }
-
         /* SERVICES */
         .services-section { background: var(--cream); }
         .services-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 80px; }
@@ -286,7 +279,6 @@
             transition: all 0.4s cubic-bezier(.23,1,.32,1);
         }
         .service-card:hover .service-arrow { opacity: 1; transform: translate(0, 0); }
-
         /* DÉBARRAS */
         .debarras-section {
             background: var(--black); color: var(--white);
@@ -314,7 +306,6 @@
         .debarras-card p { font-size: 0.85rem; font-weight: 300; color: var(--stone); line-height: 1.8; }
         .debarras-card.highlight { background: var(--accent); }
         .debarras-card.highlight h3, .debarras-card.highlight p { color: var(--black); }
-
         /* WHY US */
         .why-section { background: var(--white); }
         .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 60px; margin-top: 80px; }
@@ -324,7 +315,6 @@
         .why-divider { width: 32px; height: 1px; background: var(--accent); margin-bottom: 24px; }
         .why-title { font-size: 1rem; font-weight: 500; letter-spacing: 0.04em; color: var(--text); margin-bottom: 14px; }
         .why-text { font-size: 0.88rem; font-weight: 300; color: var(--text-muted); line-height: 1.8; }
-
         /* ZONE */
         .zone-section { background: var(--white); display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
         .zone-map {
@@ -348,7 +338,6 @@
         .zone-item { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--border); }
         .zone-name { font-size: 0.9rem; font-weight: 400; color: var(--text); }
         .zone-tag { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); padding: 4px 12px; border-radius: 20px; }
-
         /* CTA */
         .cta-section { background: var(--black); text-align: center; padding: 160px 60px; position: relative; overflow: hidden; }
         .cta-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(200,169,110,0.15) 0%, transparent 60%); }
@@ -365,7 +354,6 @@
         .cta-link { font-size: 0.85rem; font-weight: 300; letter-spacing: 0.08em; color: var(--stone-light); text-decoration: none; display: flex; align-items: center; gap: 10px; transition: color 0.3s; }
         .cta-link:hover { color: var(--accent); }
         .cta-divider { color: var(--stone); font-size: 0.8rem; }
-
         /* FOOTER */
         footer { background: #050505; padding: 80px 60px 40px; }
         .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; padding-bottom: 60px; border-bottom: 1px solid rgba(255,255,255,0.06); margin-bottom: 40px; }
@@ -377,7 +365,6 @@
         .footer-col a:hover { color: var(--accent); }
         .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
         .footer-bottom p { font-size: 0.75rem; letter-spacing: 0.08em; color: rgba(255,255,255,0.2); }
-
         /* MODAL */
         .modal { display: none; position: fixed; z-index: 9000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); overflow-y: auto; }
         .modal.active { display: block; }
@@ -406,7 +393,6 @@
         .btn-send:hover { background: var(--accent); color: var(--black); }
         .btn-cancel { font-size: 0.78rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); background: transparent; padding: 18px 28px; border: 1px solid var(--border); cursor: none; transition: all 0.3s; }
         .btn-cancel:hover { border-color: var(--text-muted); }
-
         /* SUCCESS */
         .success-modal { display: none; position: fixed; z-index: 9500; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); backdrop-filter: blur(15px); }
         .success-modal.active { display: flex; align-items: center; justify-content: center; }
@@ -419,7 +405,6 @@
         .success-details a { color: var(--accent); text-decoration: none; }
         .success-btn { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--white); background: var(--text); padding: 16px 40px; border: none; cursor: none; transition: all 0.4s; }
         .success-btn:hover { background: var(--accent); color: var(--black); }
-
         /* ANIMATIONS */
         @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes scrollPulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
@@ -432,7 +417,6 @@
         .reveal-delay-1 { transition-delay: 0.1s; }
         .reveal-delay-2 { transition-delay: 0.2s; }
         .reveal-delay-3 { transition-delay: 0.3s; }
-
         /* RESPONSIVE */
         @media (max-width: 1024px) {
             nav { padding: 24px 30px; }
@@ -458,14 +442,13 @@
             section { padding: 60px 24px; }
             .services-header { flex-direction: column; align-items: flex-start; gap: 20px; }
             .cta-section { padding: 100px 24px; }
+            .about-card-main p { font-size: 1rem; max-width: 260px; }
         }
     </style>
 </head>
 <body>
-
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
-
     <!-- NAV -->
     <nav id="mainNav">
         <a href="#" class="nav-logo">PRO<em>CAR</em> CB</a>
@@ -477,7 +460,6 @@
         </ul>
         <button class="nav-cta" onclick="openDevisForm()">Devis Gratuit</button>
     </nav>
-
     <!-- HERO -->
     <section class="hero">
         <div class="hero-bg"></div>
@@ -494,7 +476,6 @@
             <div class="scroll-line"></div>
         </div>
     </section>
-
     <!-- STATS -->
     <div class="stats-bar">
         <div class="stat-item">
@@ -514,7 +495,6 @@
             <span class="stat-label">Satisfaction garantie</span>
         </div>
     </div>
-
     <!-- ABOUT -->
     <section class="about-section" id="about">
         <div class="about-visual">
@@ -533,7 +513,6 @@
             <button class="btn-gold reveal reveal-delay-3" style="margin-top:40px;" onclick="openDevisForm()">Parler de mon projet</button>
         </div>
     </section>
-
     <!-- SERVICES -->
     <section class="services-section" id="services">
         <div class="services-header">
@@ -582,7 +561,6 @@
             </div>
         </div>
     </section>
-
     <!-- DÉBARRAS -->
     <section class="debarras-section" id="debarras">
         <div>
@@ -628,7 +606,6 @@
             </div>
         </div>
     </section>
-
     <!-- WHY US -->
     <section class="why-section" id="pourquoi">
         <div style="text-align:center; max-width:600px; margin:0 auto;">
@@ -674,7 +651,6 @@
             </div>
         </div>
     </section>
-
     <!-- ZONE -->
     <section class="zone-section" id="zone">
         <div>
@@ -716,7 +692,6 @@
             </div>
         </div>
     </section>
-
     <!-- CTA -->
     <section class="cta-section" id="cta">
         <div class="cta-bg"></div>
@@ -726,7 +701,7 @@
         <button class="btn-gold" style="position:relative; z-index:1;" onclick="openDevisForm()">Demander un Devis Gratuit</button>
         <div class="cta-contact">
             <a href="tel:0673761947" class="cta-link">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L7.91 9.22a16 16 0 0 0 6.29 6.29l1.58-1.58a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"></path></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41A2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L7.91 9.22a16 16 0 0 0 6.29 6.29l1.58-1.58a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"></path></svg>
                 06 73 76 19 47
             </a>
             <span class="cta-divider">·</span>
@@ -736,7 +711,6 @@
             </a>
         </div>
     </section>
-
     <!-- FOOTER -->
     <footer>
         <div class="footer-top">
@@ -772,7 +746,6 @@
             <p>30+ ans d'expérience · Ille-et-Vilaine</p>
         </div>
     </footer>
-
     <!-- SUCCESS MODAL -->
     <div id="successModal" class="success-modal">
         <div class="success-content">
@@ -787,7 +760,6 @@
             <button class="success-btn" onclick="closeSuccessModal()">Parfait, merci</button>
         </div>
     </div>
-
     <!-- DEVIS MODAL -->
     <div id="devisModal" class="modal">
         <div class="modal-wrapper">
@@ -799,7 +771,6 @@
                     <button class="tab-btn active" onclick="switchTab('simple', event)">Express</button>
                     <button class="tab-btn" onclick="switchTab('detailed', event)">Détaillé</button>
                 </div>
-
                 <div id="simple" class="tab-content active">
                     <form onsubmit="sendDevis(event, 'simple')">
                         <div class="form-group">
@@ -826,7 +797,6 @@
                         </div>
                     </form>
                 </div>
-
                 <div id="detailed" class="tab-content">
                     <form onsubmit="sendDevis(event, 'detailed')">
                         <div class="form-group">
@@ -910,7 +880,6 @@
             </div>
         </div>
     </div>
-
     <script>
         // Custom cursor
         const cursor = document.getElementById('cursor');
@@ -941,14 +910,12 @@
                 cursorRing.style.opacity = '0.6';
             });
         });
-
         // Scroll nav
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('mainNav');
             if (window.scrollY > 60) nav.classList.add('scrolled');
             else nav.classList.remove('scrolled');
         });
-
         // Intersection Observer
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -956,7 +923,6 @@
             });
         }, { threshold: 0.15 });
         document.querySelectorAll('.reveal, .stat-item, .why-item').forEach(el => observer.observe(el));
-
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', e => {
@@ -965,7 +931,6 @@
                 if (target) target.scrollIntoView({ behavior: 'smooth' });
             });
         });
-
         // Modal
         function openDevisForm() {
             document.getElementById('devisModal').classList.add('active');
@@ -988,7 +953,6 @@
             const modal = document.getElementById('devisModal');
             if (e.target === modal) closeDevisForm();
         };
-
         // Form validation (identique à l'original)
         function validatePhone(input) {
             let value = input.value.replace(/[^\d+\s]/g, '');
